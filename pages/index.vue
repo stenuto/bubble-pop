@@ -3,6 +3,11 @@
     :style="{ backgroundImage: 'url(/bg1.png)' }"
     class="relative h-screen w-screen bg-no-repeat bg-center bg-cover overflow-hidden"
   >
+    <Link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
     <Bubble v-for="n in bubbleArray" :key="n" @popped="() => score++" />
     <div class="absolute top-0 left-0 right-0 p-4 flex gap-4">
       <div class="flex-1">
