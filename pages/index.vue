@@ -8,6 +8,10 @@
       sizes="180x180"
       href="./apple-touch-icon.png"
     />
+    <Meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <Bubble v-for="n in bubbleArray" :key="n" @popped="() => score++" />
     <div class="absolute top-0 left-0 right-0 p-4 flex gap-4">
       <div class="flex-1">
